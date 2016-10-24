@@ -6,4 +6,9 @@ h1 {
 body {
 
 	background-image: url("ocean.jpg")
+
+}
+
+body {
+	color: rgb(255,204,211);
 }
