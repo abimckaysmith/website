@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Abi's Website</title>
+	<title>divingdiving.computer</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
 </head>
 <body>
 
-<h1>Abi's Website</h1>
+<h1 id="title">divingdiving.computer</h1>
 
 <div>
-Born on a Thursday. I have data that suggests 52 people want to have a baby with me. 0 babies as of right now. 
+<div class="frame">
+	<div class="layer" style="background-image: url('painting1.png')"></div>
+	<div class="layer boy" style="background-image: url('painting2.png')"></div>
+	<div class="layer girl" style="background-image: url('littlegirl.png')"></div>
+	<div class="layer frames" style="background-image: url('frames.png')"></div>
+	<div class="layer women" style="background-image: url('women.png')"></div>
 
- <a href="http://divingdiving.computer/buzzfeed">buzzfeed</a>
+	<div class="hitbox-girl"></div>
+	<div class="hitbox-frames"></div>
+	<div class="hitbox-women"></div>
+	<div class="hitbox-boy"></div>
+
 </div>
 
+ <!-- <a href="http://divingdiving.computer/buzzfeed">buzzfeed</a> -->
+
+<script type="text/javascript">
+	$('#title').hover(function(){
+		$('body').addClass('hovered');
+	}, function(){
+		$('body').removeClass('hovered');
+	});
+	$('.hitbox-boy').hover(function(){
+		$('body').addClass('hovered-boy');
+	}, function(){
+		$('body').removeClass('hovered-boy');
+	});
+	$('.hitbox-women').hover(function(){
+		$('body').addClass('hovered-women');
+	}, function(){
+		$('body').removeClass('hovered-women');
+	});
+	$('.hitbox-frames').hover(function(){
+		$('body').addClass('hovered-frames');
+	}, function(){
+		$('body').removeClass('hovered-frames');
+	});
+	$('.hitbox-girl').hover(function(){
+		$('body').addClass('hovered-girl');
+	}, function(){
+		$('body').removeClass('hovered-girl');
+	});
+
+
+</script>
 
 </body>
 </html>

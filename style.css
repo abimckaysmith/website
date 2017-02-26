@@ -1,14 +1,106 @@
+html,
+body {
+	margin:0;
+}
+
 h1 {
+	background: transparent;
 
+	text-align: center;
 	color: rgb(255,204,211);
+	max-width: 24rem;
+	margin: 0 auto;
+
 
 }
-body {
 
-	background-image: url("day.jpg")
 
+.hitbox-girl {
+    cursor: pointer;
+    color: transparent;
+    height: 149px;
+    width: 80px;
+    position: absolute;
+    left: 0px;
+    top: 271px;
+}
+
+.hitbox-frames {
+    cursor: pointer;
+    color: transparent;
+    height: 180px;
+    width: 411px;
+    position: absolute;
+    left: 134px;
+    top: 39px;
+}
+.hitbox-boy {
+    cursor: pointer;
+    color: transparent;
+    height: 325px;
+    width: 203px;
+    position: absolute;
+    left: 459px;
+    top: 224px;
+}
+.hitbox-women {
+	cursor: pointer;
+	color: transparent;
+	    height: 80px;
+    width: 111px;
+    position: absolute;
+    left: 675px;
+    top: 336px;
+}
+.frame {
+	width: 800px;
+	margin: 0 auto;
+	height: 587px;
+	position: relative;
+}
+.layer {
+	position: absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	background-image: url("painting1.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 body {
 	color: rgb(255,204,211);
 }
+
+.girl,
+.boy,
+.frames,
+.women {
+	opacity: 0;
+	transition: 500ms ease opacity;
+}
+
+body.hovered .girl,
+body.hovered .boy,
+body.hovered .frames,
+body.hovered .women {
+	opacity: 1;
+}
+
+
+body.hovered-girl .girl {
+	opacity: 1;
+}
+
+body.hovered-frames .frames {
+	opacity: 1;
+}
+body.hovered-boy .boy {
+	opacity: 1;
+}
+body.hovered-women .women {
+	opacity: 1;
+}
+
